@@ -1,0 +1,272 @@
+/* Universal Box-Sizing for consistent layouts */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Basic Reset */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8; /* A softer off-white */
+}
+
+/* Container for main content sections */
+section {
+    border: 2px #333 solid; /* Retained your original border for visual separation */
+    padding: 80px 60px;
+    margin: 40px auto; /* Center sections and add vertical margin */
+    max-width: 1000px; /* Limit width for readability on large screens */
+    border-radius: 8px; /* Slightly rounded corners for sections */
+}
+
+/* Header Styles */
+.site-header {
+    background: #FFC8F6; /* Your original pink */
+    color: #2A3FC4; /* Your original blue */
+    padding: 15px 20px; /* More generous padding */
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.site-header h1 {
+    font-size: 1.8em; /* Adjust font size relative to header */
+    margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none; /* This removes the bullet points */
+    display: flex;   /* This makes the list items display in a row */
+    justify-content: center; /* Centers the links horizontally */
+    gap: 25px; /* Adds space between the links */
+    font-size: 0.8em;
+}
+
+nav a {
+    color: #2A3FC4;
+    text-decoration: none; /* Removes the default underline */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover,
+nav a:focus {
+    color: #001f7f; /* Darker blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+/* Hero Section Specific Styles */
+.hero-sec {
+    background: #E3A7AD; /* Your original hero background */
+    text-align: center;
+    color: #fff; /* White text for contrast */
+    padding: 100px 60px; /* More vertical padding for a grander feel */
+}
+
+.hero-sec .section-tagline {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.hero-sec h2 {
+    font-size: 3em; /* Larger, more impactful heading */
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.hero-sec p {
+    max-width: 700px; /* Limit paragraph width for readability */
+    margin: 0 auto 30px auto; /* Center paragraph and add bottom margin */
+    font-size: 1.1em;
+}
+
+.hero-buttons {
+    display: flex; /* Makes buttons appear side-by-side */
+    justify-content: center; /* Centers the buttons */
+    gap: 20px; /* Adds space between them */
+    margin-top: 40px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 14px 28px; /* More padding for bigger buttons */
+    border-radius: 28px; /* Rounded corners */
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    font-weight: bold;
+}
+
+.btn.primary {
+    background-color: #2A3FC4; /* Primary action button */
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background-color: #001f7f; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.btn.secondary {
+    background-color: #fff; /* Secondary button, lighter */
+    color: #2A3FC4;
+    border: 2px solid #2A3FC4; /* Outline effect */
+}
+
+.btn.secondary:hover {
+    background-color: #f0f0f0; /* Slight grey on hover */
+    transform: translateY(-2px);
+}
+
+/* About Section Specific Styles */
+.about-section {
+    background-color: #fff; /* White background for contrast */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Soft shadow */
+}
+
+.about-section h3, .clients-section h3 {
+    color: #2A3FC4;
+    margin-bottom: 25px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.about-section p {
+    margin-bottom: 1.5em;
+}
+
+.product-info {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee; /* Light separator */
+}
+
+.product-info h4 {
+    color: #E3A7AD;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Clients Section Specific Styles */
+.clients-section {
+    background-color: #E0E0E0; /* Slightly darker grey for distinction */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.clients-section ul {
+    list-style: none; /* Remove bullet points */
+    text-align: center;
+}
+
+.clients-section li {
+    padding: 15px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.clients-section li h5 {
+    color: #484A47;
+    margin-bottom: 10px; /* Space before hr */
+}
+
+.clients-section hr {
+    border: none;
+    border-top: 1px dashed #bbb; /* Dashed line for a softer look */
+    margin: 15px auto;
+    width: 50%; /* Make hr shorter */
+}
+
+
+/* Footer Styles */
+.site-footer {
+    padding: 40px 20px;
+    text-align: center;
+    color: #F7F7F2; /* Your original light color */
+    background: #484A47; /* Your original dark background */
+}
+
+.site-footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #FFC8F6; /* Use a complementary color for footer heading */
+}
+
+.site-footer p {
+    margin-bottom: 10px;
+}
+
+.site-footer address {
+    font-style: normal; /* Override default italic address style */
+    margin-top: 20px;
+}
+
+.site-footer address a {
+    color: #61dafb; /* A light blue for links */
+    text-decoration: none;
+}
+
+.site-footer address a:hover {
+    text-decoration: underline;
+}
+
+.site-footer .copyright {
+    margin-top: 30px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Basic Responsiveness (for demonstration) */
+@media (max-width: 768px) {
+    section {
+        padding: 50px 30px; /* Reduce padding on smaller screens */
+        margin: 20px auto;
+    }
+
+    .hero-sec h2 {
+        font-size: 2.2em; /* Smaller heading on mobile */
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px;
+    }
+
+    .btn {
+        width: 80%; /* Make buttons wider */
+        max-width: 300px; /* Limit max width */
+        margin: 0 auto; /* Center stacked buttons */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+        gap: 10px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 30px 15px; /* Even less padding on very small screens */
+    }
+
+    .site-header h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-sec h2 {
+        font-size: 1.8em;
+    }
+}
+
+

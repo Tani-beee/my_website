@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & Flow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Darker text */
+        }
+        .btn-main {
+            @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-800">
+             Form & Flow
+            </div>
+            <nav>
+                <a href="#" class="text-gray-600 hover:text-blue-800 font-medium transition-colors">Learn More</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="min-h-[calc(100vh-80px)] flex items-center justify-center text-center py-16 px-4 bg-gradient-to-br from-blue-500 to-indigo-600 text-white">
+        <div class="max-w-2xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                Simple. Elegant. Effective.
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                A concise and powerful solution designed for clarity and impact.
+            </p>
+            <button class="btn-main bg-white text-blue-600 hover:bg-gray-100">
+                Discover More
+            </button>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white shadow-inner">
+        <div class="container mx-auto px-4 max-w-3xl text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">What We Do</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                We focus on delivering core functionality with a clean user experience. Our approach prioritizes simplicity and efficiency, ensuring your message is clear and your audience is engaged without unnecessary clutter.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">
+                    <i class="fas fa-code text-3xl"></i>
+                    <p class="text-sm mt-2">Clean Code</p>
+                </a>
+                <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">
+                    <i class="fas fa-mobile-alt text-3xl"></i>
+                    <p class="text-sm mt-2">Responsive</p>
+                </a>
+                <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">
+                    <i class="fas fa-lightbulb text-3xl"></i>
+                    <p class="text-sm mt-2">Innovative</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm mb-4">&copy; 2025 My Minimal Project. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin-in text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

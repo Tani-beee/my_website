@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chic Threads - Modern Fashion</title>
+    <style>
+        /* --- Basic CSS Reset --- */
+        body, h1, h2, h3, p, ul, li, button {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Global Body Styles --- */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif; /* A clean, modern sans-serif font */
+            line-height: 1.6;
+            background-color: #f8f8f8; /* Soft off-white background */
+            color: #333; /* Dark gray text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- Container for Centering Content --- */
+        .container {
+            max-width: 1000px; /* Slightly wider for fashion content */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Header Styles --- */
+        header {
+            background-color: #1a1a1a; /* Deep charcoal/black */
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        }
+
+        header h1 {
+            font-size: 2.5em; /* Prominent site title */
+            margin-bottom: 10px;
+            letter-spacing: 2px; /* A bit of letter spacing for elegance */
+            text-transform: uppercase; /* Uppercase for a brand feel */
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin: 0 20px; /* More space between nav items */
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600; /* Slightly bolder */
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        header nav ul li a:hover {
+            color: #d4af37; /* Gold/bronze accent on hover */
+        }
+
+        /* --- Main Content Area (Hero Section) --- */
+        .hero-section {
+            background-image: url('https://res.cloudinary.com/dnlhvdxem/image/upload/v1747993539/ohzee_512_zlhgn4.webp'); /* Placeholder image for fashion */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px; /* More vertical padding */
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative; /* For the overlay */
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Darker overlay for text readability */
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero-section h2 {
+            font-size: 3.5em; /* Larger, more impactful heading */
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* Stronger text shadow */
+        }
+
+        .hero-section p {
+            font-size: 1.3em; /* Larger paragraph text */
+            margin: 0 auto 40px auto;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        .hero-section button {
+            background-color: #d4af37; /* Gold/bronze button */
+            color: #1a1a1a; /* Dark text on button */
+            padding: 15px 35px; /* More padding for a premium feel */
+            border: none;
+            border-radius: 30px; /* More rounded, pill-shaped */
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Button shadow */
+        }
+
+        .hero-section button:hover {
+            background-color: #e0b94b; /* Slightly lighter gold on hover */
+            transform: translateY(-3px); /* Slight lift effect */
+        }
+
+        /* --- General Content Section --- */
+        .content-section {
+            background-color: #fff;
+            padding: 80px 20px; /* More padding */
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Softer shadow */
+            margin-bottom: 20px;
+        }
+
+        .content-section h3 {
+            font-size: 2.5em; /* Larger heading */
+            color: #1a1a1a;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .content-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* --- Footer Styles --- */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc; /* Lighter gray for footer text */
+            padding: 30px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer p {
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+
+        /* --- Basic Responsiveness --- */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            header nav ul li {
+                margin: 0 10px;
+            }
+            .hero-section h2 {
+                font-size: 2.5em;
+            }
+            .hero-section p {
+                font-size: 1.1em;
+            }
+            .content-section h3 {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header nav ul li {
+                display: block; /* Stack navigation links on very small screens */
+                margin: 8px 0;
+            }
+            .hero-section {
+                padding: 60px 15px;
+            }
+            .hero-section h2 {
+                font-size: 1.8em;
+            }
+            .hero-section p {
+                font-size: 0.9em;
+            }
+            .hero-section button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+            .content-section {
+                padding: 40px 15px;
+            }
+            .content-section h3 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Chic Threads</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-overlay"></div> <div class="hero-content">
+            <h2>Redefine Your Style.</h2>
+            <p>Discover curated collections that blend timeless elegance with modern trends. Step into a world where fashion meets individuality.</p>
+            <button>Shop The Latest</button>
+        </div>
+    </main>
+
+    <section class="content-section">
+        <div class="container">
+            <h3>Our Philosophy</h3>
+            <p>At Chic Threads, we believe fashion is an expression of self. We meticulously select high-quality garments and accessories that empower you to embrace your unique identity. Our commitment is to sustainable practices and timeless designs that transcend fleeting trends, offering pieces you'll cherish for seasons to come.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Chic Threads. All rights reserved. Style is eternal.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

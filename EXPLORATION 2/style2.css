@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0a0a;
+  color: #f1f5f9;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1e1b4b; /* Deep purple */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #a78bfa; /* Light lavender */
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #f1f5f9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #c084fc; /* Soft purple hover */
+}
+
+/* Sections */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+  color: #f1f5f9;
+}
+
+.home {
+  background-color: #0f0f1f; /* Dark indigo */
+}
+
+.about {
+  background-color: #1e1b4b; /* Deep purple */
+}
+
+.projects {
+  background-color: #2e1065; /* Rich purple */
+}
+
+.contact {
+  background-color: #4c1d95; /* Vivid violet */
+}
+
+/* Project Cards */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.project {
+  background-color: #18181b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #e879f9;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .project-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project {
+    width: 48%;
+  }
+}

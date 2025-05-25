@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bloom Coffee Co.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom fonts applied to body and headings */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f5; /* Light grey background */
+        }
+        h1, h2, h3, h4, h5, h6 { /* Apply Playfair Display to all headings */
+            font-family: 'Playfair Display', serif; /* Elegant font for headings */
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="bg-amber-800 text-white text-center py-2 text-sm font-medium">
+        Enjoy 15% off your first order with code: NEWBREW
+    </div>
+
+    <header class="bg-stone-900 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <div class="text-3xl font-bold text-amber-500">
+                Brew & Bloom
+            </div>
+
+            <nav id="main-nav" class="hidden lg:flex space-x-8">
+                <a href="#" class="text-white hover:text-amber-500 transition-colors text-lg">Home</a>
+                <a href="#" class="text-white hover:text-amber-500 transition-colors text-lg">Shop</a>
+                <a href="#" class="text-white hover:text-amber-500 transition-colors text-lg">About Us</a>
+                <a href="#" class="text-white hover:text-amber-500 transition-colors text-lg">Blog</a>
+                <a href="#" class="text-white hover:text-amber-500 transition-colors text-lg">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-6">
+                <a href="#" class="text-white hover:text-amber-500 transition-colors">
+                    <i class="fas fa-search text-xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-amber-500 transition-colors">
+                    <i class="fas fa-user-circle text-xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-amber-500 transition-colors relative">
+                    <i class="fas fa-shopping-cart text-xl"></i>
+                    <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                </a>
+            </div>
+
+            <button id="mobile-menu-button" class="lg:hidden text-white text-2xl focus:outline-none ml-4">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <nav id="mobile-nav" class="lg:hidden mt-4 bg-stone-800 p-4 rounded-md hidden">
+            <ul class="flex flex-col space-y-4 text-center">
+                <li><a href="#" class="block text-white hover:text-amber-500 transition-colors text-lg py-2">Home</a></li>
+                <li><a href="#" class="block text-white hover:text-amber-500 transition-colors text-lg py-2">Shop</a></li>
+                <li><a href="#" class="block text-white hover:text-amber-500 transition-colors text-lg py-2">About Us</a></li>
+                <li><a href="#" class="block text-white hover:text-amber-500 transition-colors text-lg py-2">Blog</a></li>
+                <li><a href="#" class="block text-white hover:text-amber-500 transition-colors text-lg py-2">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="relative bg-cover bg-center h-[600px] flex items-center justify-center text-white" style="background-image: url('https://res.cloudinary.com/dnlhvdxem/image/upload/v1747991005/Coffee_Beans_Background-727176932_iulqno.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center p-4">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4 drop-shadow-lg">
+                COFFEE LOVERS?
+            </h1>
+            <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+                Discover the rich aroma and exquisite taste of our ethically sourced, freshly roasted coffee beans.
+            </p>
+            <button class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                Explore Our Coffees
+            </button>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-stone-800 mb-6">Our Passion for Coffee</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                At Brew & Bloom, we believe in the art of coffee. From carefully selecting the finest beans from sustainable farms around the world to expertly roasting them in small batches, every step is a testament to our commitment to quality and taste. We're more than just coffee; we're an experience.
+            </p>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-seedling text-5xl text-green-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-stone-800 mb-2">Ethically Sourced</h3>
+                    <p class="text-gray-600">Committed to fair trade and sustainable practices.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-fire-alt text-5xl text-red-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-stone-800 mb-2">Expertly Roasted</h3>
+                    <p class="text-gray-600">Small batch roasting for perfect flavor profiles.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-hand-holding-heart text-5xl text-pink-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-stone-800 mb-2">Passionately Crafted</h3>
+                    <p class="text-gray-600">Every cup tells a story of dedication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-stone-800 mb-10">Our Signature Blends</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://res.cloudinary.com/dnlhvdxem/image/upload/v1747991491/a0c4e0133a53c20407e25836cd8244ec_bthzz3.jpg">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-stone-800 mb-2">The Classic Espresso</h3>
+                        <p class="text-gray-600 mb-4">A bold and rich blend, perfect for your morning shot.</p>
+                        <span class="text-2xl font-bold text-amber-700">₹ 250/- </span>
+                        <button class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 w-full mt-4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://res.cloudinary.com/dnlhvdxem/image/upload/v1747991493/lightroast-product-01.jpg_zrl8lk.webp" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-stone-800 mb-2">Sunrise Serenity</h3>
+                        <p class="text-gray-600 mb-4">A bright and fruity light roast, a refreshing start.</p>
+                        <span class="text-2xl font-bold text-amber-700">₹370/- </span>
+                        <button class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 w-full mt-4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://res.cloudinary.com/dnlhvdxem/image/upload/v1747991574/ItalianRoastHomeBlendCoffeeRoastersCupBag.png_rpsgvq.webp" alt="Dark Roast" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-stone-800 mb-2">Midnight Velvet</h3>
+                        <p class="text-gray-600 mb-4">Deep, smoky, and smooth dark roast for true connoisseurs.</p>
+                        <span class="text-2xl font-bold text-amber-700">₹499/- </span>
+                        <button class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 w-full mt-4">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <button class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 mt-12">View All Products</button>
+        </div>
+    </section>
+
+    <section class="py-16 bg-amber-700 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-4">Join Our Coffee Community</h2>
+            <p class="text-lg mb-8">Sign up for our newsletter to get exclusive offers and the latest coffee news.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+                <input type="email" placeholder="Enter your email address" class="p-3 rounded-full outline-none text-gray-800 w-full md:w-1/3 max-w-md">
+                <button class="bg-white text-amber-700 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 hover:bg-gray-200">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-white py-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+            <div>
+                <h3 class="text-xl font-bold text-amber-500 mb-4">Brew & Bloom</h3>
+                <p class="text-gray-400">Your daily dose of exceptional coffee.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-amber-500"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-amber-500">Shop All</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-amber-500">Our Story</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-amber-500">FAQ</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-amber-500">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <p class="text-gray-400">123 Coffee Lane, Brewtown, CA 90210</p>
+                <p class="text-gray-400">Email: info@brewandbloom.com</p>
+                <p class="text-gray-400">Phone: 987777888</p>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 mt-8">
+            &copy; 2025 Brew & Bloom Coffee Co. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden'); // Toggles the 'hidden' Tailwind class
+        });
+    </script>
+
+</body>
+</html>
